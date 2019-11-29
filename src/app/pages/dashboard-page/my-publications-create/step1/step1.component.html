@@ -1,0 +1,63 @@
+<form #step1Form="ngForm" novalidate>
+  <div class="step1">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h5>Comencemos con los detalles básicos</h5>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="title" class="col-sm-3 col-form-label">Titulo</label>
+      <div class="col-sm-9 sp-input-sin-padding">
+        <input type="text" class="form-control-plaintext input-bottom"
+          required id="title" name="title" [(ngModel)]="step1.title">
+      </div>
+    </div>
+    
+    <div class="form-group row">
+      <label for="category" class="col-sm-3 col-form-label">Categoría</label>
+      <div class="col-sm-9 sp-group-category">
+        <div class="form-check">
+          <input class="" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Video
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Sonido
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            Cine
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="" type="checkbox" value="" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+            Edición
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="" type="checkbox" value="" id="defaultCheck5">
+          <label class="form-check-label" for="defaultCheck5">
+            Filmación
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-right">
+          <button class="btn btn-sp-next" [disabled]="!step1Form.valid" 
+            (click)="goToNextStep(step1Form)">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

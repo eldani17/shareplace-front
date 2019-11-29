@@ -1,0 +1,37 @@
+.footer-home{
+  background-color: $sp-blue-dark;
+  color:$sp-white;
+
+  .footer-logo{
+    font-weight: 700;
+    padding-top: 10px;
+  }
+
+  .footer-home-link{
+    padding-top: 10px;
+    font-weight: 700;
+    color:$sp-blue-primary;
+    list-style: none;
+    padding-left: 0;
+    
+    li{
+      a{
+        color:$sp-blue-primary;
+      }
+    }
+  }
+
+  .footer-home-contact{
+    padding-top: 10px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footer-home-img{
+    width: 100%;
+    img{
+      padding: 10px;
+      height: 200px;
+    }
+  }
+}

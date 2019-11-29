@@ -1,0 +1,37 @@
+<div class="header-home">
+  <nav class="navbar navbar-transparent navbar-expand-lg">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand home-logo" [routerLink]="['inicio']">SharePlace</a>
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse"
+          data-target="#navbarSpContent"
+          aria-controls="navbarSpContent"
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSpContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link home-item-menu" [routerLinkActive]="['nav-activo']" [routerLink]="['perfiles']">Perfiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link home-item-menu" [routerLinkActive]="['nav-activo']" [routerLink]="['acerca-de']">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link home-item-menu" [routerLinkActive]="['nav-activo']" [routerLink]="['iniciar-sesion']">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link home-item-menu" [routerLinkActive]="['nav-activo']" [routerLink]="['registrarse']">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

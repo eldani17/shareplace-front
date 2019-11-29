@@ -1,0 +1,29 @@
+<section class="jumbotron jumbotron-fluid login">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+        <form class="form-signin">
+          <h4 class="">Bienvenidos!</h4>
+          <h6>Si ya estas registrado, ingresa tus datos</h6>
+          <input type="number" id="inputDni" name="inputDni" class="form-control"
+           [(ngModel)]="dni" placeholder="Dni"
+           required autofocus>
+          <input type="password" id="inputPassword" name="inputPassword" class="form-control"
+           [(ngModel)]="password" placeholder="Password" required>
+          <div class="checkbox text-right">
+            <label>
+              <input type="checkbox" value="remember-me">Recordar
+            </label>
+          </div>
+          <button class="btn btn-lg btn-block btn-login" 
+            (click)="login()">Iniciar sesión
+          </button>
+          <button class="btn btn-lg btn-block btn-register" 
+            (click)="register()">Registrate
+          </button>
+          <a href="#">¿Olvidó su contraseña?</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

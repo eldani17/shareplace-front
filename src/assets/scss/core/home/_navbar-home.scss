@@ -1,0 +1,24 @@
+.header-home{
+  .navbar{
+    border-radius: 0px;
+    background-color:$sp-green !important;
+    margin-bottom: 0;
+    
+    .home-logo{
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    .home-item-menu{
+      text-transform: capitalize !important;
+      font-weight: 700 !important;
+      font-size: 16px !important;
+      
+    }
+
+    .nav-activo{
+      border-bottom: 5px solid white;
+      border-radius: 0px !important;
+    }
+  }
+}

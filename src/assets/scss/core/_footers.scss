@@ -1,0 +1,34 @@
+.footer{
+    background-color: $sp-blue-dark;
+    padding: $padding-general-x 0;
+    display: -webkit-flex; /* Safari */ /* Safari 6.1+ */
+    display: flex;
+
+    .logo-footer{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        img{
+            width: 65px;
+            text-align: center;
+            border: 4px solid $sp-white;
+            border-radius: 70px;
+            padding: 4px;
+        }
+    }
+
+    .copyright{
+        color: $sp-white;
+        padding: 15px 0;
+        .material-icons{
+            font-size: 18px;
+            position: relative;
+            top: 3px;
+        }
+  
+    }
+
+    .pull-center{
+        display: inline-block;
+    }
+}

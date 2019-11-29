@@ -1,0 +1,49 @@
+<div class="step3">
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-12 col-form-label">Condiciones de préstamos</label>
+    <div class="col-sm-8 sp-input-sin-padding">
+      <form class="search-local">
+        <mat-form-field>
+              <input
+                input="text"
+                matInput 
+                [matAutocomplete]="auto" 
+                [formControl]="controlConditions"
+                [(ngModel)]="conditionNew"
+              >
+          <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayAutocomplete">
+            <mat-option *ngFor="let condition of filteredConditions | async" [value]="condition">
+              {{condition}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-sp-previous" (click)="addCondition()">Agregar</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <span class="span-sp-leyenda">Podes ingresar más de una condición</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" *ngFor="let conditionNew of listConditionOfPublication">
+      <span class="condition-bold">* {{conditionNew}}</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="text-left">
+        <button class="btn btn-sp-previous" (click)="goTopreviousStep()">Atrás</button>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="text-right">
+        <button class="btn btn-sp-next" (click)="goToNextFinish()">Finalizar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  

@@ -1,0 +1,59 @@
+ @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+ @import "core/variables";
+ @import "core/mixins";
+ @import "~bootstrap/scss/bootstrap";
+
+
+ // Core Components
+ @import "core/buttons";
+ @import "core/checkboxes";
+ @import "core/radios";
+ @import "core/forms";
+ @import "core/input-group";
+ @import "core/images";
+ @import "core/navbar";
+ @import "core/alerts";
+ @import "core/type";
+ @import "core/tabs";
+ @import "core/tooltip";
+ @import "core/popover";
+ @import "core/dropdown";
+ @import "core/togglebutton";
+ @import "core/ripples";
+ @import "core/footers";
+ @import "core/sidebar-and-main-panel";
+ @import "core/fixed-plugin";
+ @import "core/tables";
+ @import "core/misc";
+
+@import "core/cards";
+@import "core/cards/card-stats";
+@import "core/cards/card-profile";
+@import "core/cards/card-plain";
+
+ //plugin scss
+ @import "core/plugins/animate";
+ @import "core/plugins/chartist";
+ @import "core/plugins/perfect-scrollbar";
+
+ @import "core/responsive";
+
+@import "core/angular-modal.scss";
+
+ //shareplace
+ //HOME
+ @import "core/home/navbar-home";
+ @import "core/home/footer-home";
+ @import "core/home/inicio-home";
+ @import "core/home/acerca-de-home";
+ @import "core/home/perfiles-home";
+ @import "core/home/perfil-detalle-home";
+ @import "core/home/login-home";
+ @import "core/home/register-home";
+
+ //DASHBOARD
+ @import "core/_publications";
+ @import "core/_my-publications";
+ @import "core/_my_publications_create_wizard";
+ //@import "core/_my_publications_create";

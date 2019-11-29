@@ -1,0 +1,121 @@
+.card-wizard{
+  background-color: $sp-white;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+  .card-header-sp{
+    border-radius: 0px;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 1px solid $sp-grey;
+    .row-header-sp{
+      margin:0px !important;
+      .col-header-sp{
+        padding: 0px;
+        .btn-sp{
+          margin:0px;
+          background-color: transparent;
+          color: $sp-grey-dark;
+          width: 100%;
+          box-shadow: none;
+        }
+        .btn-sp.active{
+          background-color: $sp-blue-dark;
+          color:$sp-white;
+          box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+        }
+      }
+    }
+  }
+//}
+
+//.step1{
+  .sp-input-sin-padding{
+    padding:0px;
+  }
+
+  .input-bottom{
+    border-bottom: 1px solid $sp-grey;
+    border-top: none;
+  }
+  .sp-group-category{
+    border: 1px solid $sp-grey;
+    .form-check{
+      input{
+        padding-left: 5px;
+      }
+      .form-check-label{
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .btn:disabled{
+    background-color: $sp-grey;
+    color:$sp-white;
+    opacity: 0,15;
+  }
+  .btn-sp-next{
+    background-color: $sp-green-light;
+  }
+//}
+
+//.step2{
+  .sp-text-area{
+    display: block;
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .square-image{
+    display: block;
+    width: 100%;
+    border: 1px solid $sp-grey;
+    text-align: center;
+    i{
+      font-size: 50px;
+    }
+    img{
+      text-align: center;
+    }
+  }
+  .sp-span{
+    display: block;
+    text-align: center;
+  }
+
+  .btn:disabled{
+    background-color: $sp-grey;
+    color:$sp-white;
+    opacity: 0,15;
+  }
+
+  .btn-sp-previous{
+    background-color: $sp-blue-primary;
+  }
+  .btn-sp-next{
+    background-color: $sp-green-light;
+  }
+//}
+
+//.step3{
+  
+  .span-sp-leyenda{
+    display: block;
+    width: 100%;
+    color:$sp-grey-light;
+  }
+
+  .btn:disabled{
+    background-color: $sp-grey;
+    color:$sp-white;
+    opacity: 0,15;
+  }
+
+  .btn-sp-previous{
+    background-color: $sp-blue-primary;
+  }
+  .btn-sp-next{
+    background-color: $sp-green-light;
+  }
+//}

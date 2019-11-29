@@ -1,0 +1,30 @@
+.profile-detail{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .card{
+    margin-top: 0;
+    background-color: $sp-grey-light-background;
+    box-shadow: none !important;
+
+    .sp-card-img{
+      border: 1px solid #000;
+    }
+
+    .card-body{
+      padding-left:0;
+      .score{
+        .favorite{
+          .material-icons{
+            color:$sp-color-favorite;
+          }
+        }
+      }
+    }
+  }
+
+
+  ul{
+    padding-left: 20px;
+  }
+}

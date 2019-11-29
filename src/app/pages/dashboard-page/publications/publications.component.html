@@ -1,0 +1,137 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row publications">
+      <div class="col-md-6 header-equipment">
+        <h6 class="title-section">Publicaciones</h6>
+      </div>
+      <div class="col-md-6 header-equipment">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="orderBy">Ordenar por:</label>
+          </div>
+          <select class="custom-select" id="orderBy">
+            <option value="0" selected>Más Reciente</option>
+            <option value="1">Más Antiguo</option>
+            <option value="2">Mayor Calificación</option>
+            <option value="3">Menor Calificación</option>
+            <option value="3">Orden Ascendente</option>
+            <option value="3">Orden Descendente</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row publications">
+      <div class="col-md-3 sp-card-img" *ngFor="let publication of publications">
+        <div class="card">
+          <!-- <img class="card-img-top sp-card-img" *ngIf="publication.images.length > 0" [src]="publication.images[0].path" alt=""> -->
+          <img class="card-img-top sp-card-img" src="../../assets/img/default.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">{{publication.id}} - {{publication.title}}</h5>
+            <p class="card-text">{{publication.user_id}}</p>
+          </div>
+          <div class="score">
+            <div class="favorite">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="number">
+              123
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn btn-block btn-outline-primary btn-sp-load-plus">Cargar Más...</button>
+      </div>
+    </div>
+    <div class="row publications">
+      <div class="col-md-12 header-equipment">
+        <h6 class="p-l-0">Habilidades</h6>
+      </div>
+      <div class="col-md-3 sp-card-img">
+        <div class="card">
+          <img class="card-img-top sp-card-img" src="../../assets/img/person/chica01.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Titulo de Publicación</h5>
+            <p class="card-text">Nombre Prestador</p>
+          </div>
+          <div class="score">
+            <div class="favorite">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="number">
+              123
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top sp-card-img" src="../../assets/img/person/chica06.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Titulo de Publicación</h5>
+            <p class="card-text">Nombre Prestador</p>
+          </div>
+          <div class="score">
+            <div class="favorite">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="number">
+              123
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top sp-card-img" src="../../assets/img/person/chico09.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Titulo de Publicación</h5>
+            <p class="card-text">Nombre Prestador</p>
+          </div>
+          <div class="score">
+            <div class="favorite">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="number">
+              123
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img class="card-img-top sp-card-img" src="../../assets/img/person/chico10.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Titulo de Publicación</h5>
+            <p class="card-text">Nombre Prestador</p>
+          </div>
+          <div class="score">
+            <div class="favorite">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </div>
+            <div class="number">
+              123
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn btn-block btn-outline-primary btn-sp-load-plus">Cargar Más...</button>
+      </div>
+    </div> -->
+  </div>
+</div>

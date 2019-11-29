@@ -1,0 +1,128 @@
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h5>Creación de una publicación</h5>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <form class="card-wizard">
+          <div class="form-group row">
+            <label for="title" class="col-sm-3 col-form-label">Titulo</label>
+            <div class="col-sm-9 sp-input-sin-padding">
+              <input type="text" class="form-control-plaintext input-bottom"
+                required id="title" name="title" [(ngModel)]="publiciationData.title">
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <label for="category" class="col-sm-3 col-form-label">Categoría</label>
+            <div class="col-sm-9 sp-group-category">
+              <div class="form-check">
+                <input class="" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Video
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Sonido
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  Cine
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="" type="checkbox" value="" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck4">
+                  Edición
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="" type="checkbox" value="" id="defaultCheck5">
+                <label class="form-check-label" for="defaultCheck5">
+                  Filmación
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="description" class="col-sm-12 col-form-label">Descripción</label>
+            <div class="col-sm-12 sp-input-sin-padding">
+              <textarea type="text" class="sp-text-area" rows="6"
+                required id="title" name="title" [(ngModel)]="publiciationData.description"></textarea>
+            </div>
+          </div>  
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-12 col-form-label">Fotos</label>
+            <div class="col-sm-12 col-md-3">
+              <div class="square-image">
+                <i class="material-icons icon-image-preview">camera_alt</i>
+                <span class="sp-span">Principal</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <div class="square-image">
+                  <i class="material-icons icon-image-preview">add</i>
+                  <span class="sp-span">Otrás</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-12 col-form-label">Condiciones de préstamos</label>
+            <div class="col-sm-8 sp-input-sin-padding">
+              <form class="search-local">
+                <mat-form-field>
+                      <input
+                        input="text"
+                        matInput 
+                        [matAutocomplete]="auto" 
+                        [formControl]="controlConditions"
+                        [(ngModel)]="conditionNew"
+                      >
+                  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayAutocomplete">
+                    <mat-option *ngFor="let condition of filteredConditions | async" [value]="condition">
+                      {{condition}}
+                    </mat-option>
+                  </mat-autocomplete>
+                </mat-form-field>
+              </form>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-sp-previous" (click)="addCondition()">Agregar</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <span class="span-sp-leyenda">Podes ingresar más de una condición</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12" *ngFor="let conditionAdd of listConditionOfPublication">
+              <span class="condition-bold">* {{conditionAdd}}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="text-right">
+                <button class="btn btn-sp-next" (click)="goToNextFinish()">Finalizar</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <input type="file" (change)="addImage($event)"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

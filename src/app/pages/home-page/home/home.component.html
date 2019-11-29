@@ -1,0 +1,31 @@
+<section class="jumbotron jumbotron-fluid section-home">
+  <div class="section-search">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Licenciatura medios audiovisuales</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="background-search">
+            <form class="form-search-home">
+              <div class="input-group sp-buscador">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="icon-search-sp">
+                    <i class="material-icons" aria-hidden="true">search</i>
+                  </span>
+                </div>
+                <input type="text" id="input-search-sp" class="form-control" 
+                  placeholder="Buscar perfiles" [(ngModel)]="searchInput" name="searchInput">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="btn-search-sp" (click)="searchProfiles()">Buscar</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

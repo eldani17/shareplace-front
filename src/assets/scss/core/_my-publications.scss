@@ -1,0 +1,47 @@
+.btn-sp-load-plus{
+  color: $sp-blue-primary !important;
+  border-color: $sp-blue-primary !important;
+  margin: 0px;
+  margin-bottom: 35px;
+}
+
+.publication-status{
+  box-shadow: none;
+  .card-title{
+    text-align: center;
+  }
+  .btn-sp-publication-status{
+    background-color: $sp-green;
+  }
+}
+
+.search-local{
+  .sp-buscador{
+    border: 1px solid $sp-grey-light;
+    background: $sp-white;
+
+    #input-search-sp-local{
+      padding-left: 5px;
+      background-image: none;
+    }
+
+    #icon-search-sp-local{
+      border-left: 1px solid $sp-grey-light;
+      color: $sp-grey-light
+    }
+  }
+}
+
+.section-sp-add-publication{
+  text-align: right;
+  .btn-sp-add{
+    background-color: $sp-blue-primary;
+    margin:0px;
+  }
+}
+
+.step3{
+  .condition-bold{
+    font-weight: 700;
+  }
+}

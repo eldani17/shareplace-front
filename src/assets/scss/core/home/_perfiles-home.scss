@@ -1,0 +1,49 @@
+.profiles-home{
+  background-color: $sp-grey-light-background;
+  padding-top: 50px;
+
+  .sp-buscador #input-search-sp {
+    background-image: none;
+    width: 60%;
+  }
+  
+  .card{
+    box-shadow: none !important;
+    .sp-card-img{
+      border: 1px solid #000;
+    }
+    .card-body{
+      padding-left:0;
+      cursor: pointer;
+      background-color: $sp-grey-light-background;
+
+      .card-title{
+        margin:0;
+      }
+    }
+  }
+
+  .form-profile{
+    width: 100%;
+    .sp-buscador{
+      border: 1px solid $sp-blue-primary;
+      background: $sp-white;
+      width: 100%;
+  
+      #icon-search-sp{
+        color: $sp-grey-light;
+        padding: 0px 5px;
+      }
+  
+      #input-search-sp{
+        background-image: none;
+      }
+  
+      #btn-search-sp{
+        color: $sp-white;
+        background-color: $sp-blue-primary;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-wrapper d-block d-sm-block d-md-none">
+      <a class="navbar-brand" href="javascript:void(0)">{{getTitle()}}</a>
+    </div>
+    <button mat-raised-button class="navbar-toggler" type="button" (click)="sidebarToggle()">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+      <form class="navbar-form my-0 mr-md-auto font-weight-normal">
+        <div class="input-group sp-buscador">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="icon-search-sp">
+              <i class="material-icons" aria-hidden="true">search</i>
+            </span>
+          </div>
+          <input type="text" id="input-search-sp" class="form-control" placeholder="Buscar perfil, habilidades, productos y más">
+          <div class="input-group-append">
+            <span class="input-group-text" id="btn-search-sp">Buscar</span>
+          </div>
+        </div>
+      </form>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav my-2 my-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">person</i>
+              Nombre
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

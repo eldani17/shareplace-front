@@ -1,0 +1,37 @@
+<section class="profiles-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-4">
+        <div class="search-profiles">
+          <form class="form-profile">
+            <div class="input-group sp-buscador">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="icon-search-sp">
+                  <i class="material-icons" aria-hidden="true">search</i>
+                </span>
+              </div>
+              <input type="text" id="input-search-sp" class="form-control" 
+                placeholder="Buscar perfiles" name="inputSearch" [(ngModel)]="inputSearch">
+              <div class="input-group-append">
+                <span class="input-group-text" id="btn-search-sp" (click)="searchLocal()">Buscar</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- <div > -->
+        <div class="col-xs-12 col-md-4 col-lg-3 sp-card-img" *ngFor="let user of users">
+          <div class="card">
+            <img class="card-img-top sp-card-img" src="../../assets/img/default.jpg" alt="">
+            <div class="card-body" (click)="goProfileDetail(user)">
+              <h5 class="card-title">{{user.lastName}} {{ user.name}}</h5>
+              <p class="card-text">Habilidad destacada</p>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>

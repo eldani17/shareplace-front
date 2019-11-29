@@ -1,0 +1,39 @@
+.register{
+  background-image: linear-gradient( rgba(62,62,62, 0.87), rgba(62,62,62, 0.87) ), 
+    url('/assets/img/home-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  margin-bottom: 0;
+
+  .title{
+    margin-top: 50px;
+    font-weight: 500;
+    color:$sp-white;
+  }
+
+  input{
+    margin:10px auto;
+    color: $sp-white;
+  }
+
+  .btn-register, .btn-register:hover, .btn-register:active{
+    background-color: $sp-blue-primary;
+  }
+
+  a{
+    color: $sp-blue-primary;
+  }
+
+  a:hover, a:focus {
+    color: $sp-blue-primary;
+    text-decoration: none;
+  }
+
+  input:focus{
+    background-image: 
+      linear-gradient(to top, $sp-green 2px, rgba(244, 67, 54, 0) 2px), 
+      linear-gradient(to top, $sp-green 1px, rgba(210, 210, 210, 0) 1px);
+    color:$sp-white;
+  }
+}

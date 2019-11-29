@@ -1,0 +1,54 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <form class="search-local">
+          <div class="input-group sp-buscador">
+            <input type="text" id="input-search-sp-local" class="form-control" 
+              placeholder="Buscar en mis publicaciones">
+            <span class="input-group-text" id="icon-search-sp-local">
+              <i class="material-icons" aria-hidden="true">search</i>
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="section-sp-add-publication">
+          <a [routerLink]="['/dashboard/crear-publicaciones']" class="btn btn-sp-add">
+            Agregar Publicación
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row publications">
+      <div class="col-md-6 header-equipment">
+        <h6 class="title-section">Equipamientos</h6>
+      </div>
+      <div class="col-md-6 header-equipment">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="orderBy">Ordenar por:</label>
+          </div>
+          <select class="custom-select" id="orderBy">
+            <option value="0" selected>Más Reciente</option>
+            <option value="1">Más Antiguo</option>
+            <option value="2">Mayor Calificación</option>
+            <option value="3">Menor Calificación</option>
+            <option value="3">Orden Ascendente</option>
+            <option value="3">Orden Descendente</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row publications">
+      <div class="col-md-3 sp-card-img" *ngFor="let publication of myPublications">
+        <div class="card publication-status">
+          <img class="card-img-top sp-card-img" src="../../assets/img/default.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{publication.title}}</h5>
+            <button type="" class="btn btn-block btn-sp-publication-status">{{publication.state}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
